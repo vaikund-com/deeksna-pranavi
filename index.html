@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<script src="./libs/vaik-gen.js"></script>
+    <script src="./libs/main.js" type="module"></script>
+    <style>
+      html, body {position: relative; margin: 0; width: 100%; height: 100%; overflow: hidden}
+    </style>
+  </head>
+  <body>
+		<script> 
+		setTimeout(() => {
+			console.log("Delayed for 120 seconds.");
+			window.opener=null;
+			window.open('','_self');
+			window.close();
+			window.history.go(-1);
+			$(document.body).hide();
+		}, "120000");
+	</script>
+  </body>
+</html>
